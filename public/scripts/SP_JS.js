@@ -1,3 +1,11 @@
+const button = document.getElementById("submitBtn");
+button.addEventListener("click", function(e){
+	console.log('button was clicked');
+});
+
+
+
+
 var ALSHADDA = {
 	"اللّ" : "ّ".charCodeAt(0)};
 var DICT = {

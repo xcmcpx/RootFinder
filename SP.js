@@ -1,9 +1,10 @@
 var express = require("express");
 var app = express();
 var path = require("path");
+var mongoose = require("mongoose");
 
+mongoose.connect("mongodb://localhost:27017/root_bank", { useNewUrlParser: true });
 app.use(express.static(path.join(__dirname, '/public')));
-app.use(express.static(path.join(__dirname, '/scripts')));
 
 app.set("view engine", "ejs");
 
