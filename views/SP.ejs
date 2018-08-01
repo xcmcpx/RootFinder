@@ -1,0 +1,36 @@
+<%include partials/header%>
+   <div class="ctr">
+			<div class="ctr title">
+				<h1 class="ttl">Arabic Root Finder</h1>
+			</div>
+			<div class="ctr titlArb">
+				<h2 class="ttl2">insert arabic here</h2>
+			</div>
+			<div class="ctr form">
+				<form onsubmit ="false">
+					<h3 id="engLbl"> Search Here</h3>
+					<input id="srchBox" type="text" value ="الآمرون">
+					<h3 id="arbLbl"> arb Search</h3>
+					<div class="submitBtn">
+					<button type="button" id ="submitBtn" onclick="mainMethod()">Search</button>
+				</div>
+				</form>
+			</div>
+			<div class="ctr rslts">
+			<div class="ctr rslt">
+				<p> Results</p>
+			</div>
+			<div class="ctr rslt arb">
+				<p> arb results</p>
+			</div>
+			<div class="ctr rsltbx">
+    				<ul> 
+    					<li>Results</li>
+    				</ul>
+    
+    			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="SP_JS.js"></script>
+    	<% include partials/footer %>

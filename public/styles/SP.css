@@ -1,0 +1,69 @@
+body{
+	background-color: #FEFCD7;
+}
+h1, h2{
+	color: #6A8347;
+}
+.ctr{
+	height:100%;
+	width:75%;
+	margin: auto;
+	text-align:center;
+}
+.ctr .title{
+	border:solid;
+	border-color: #6A8347;
+	width:100%;
+}
+.ctr .titlArb{
+	width:85%;
+	border-style:none;
+}
+.ttl{
+	border:none;
+}
+.ctr .form{
+	width:100%;
+	height:100px;
+	position:relative;
+	text-align: center;
+}
+.ctr .form #engLbl{
+	float:left;
+}
+.ctr .form #srchBox{
+	height:40px;
+	width:300px;
+}
+.ctr .form #arbLbl{
+	float:right;
+}
+.ctr .form .submitBtn{
+	position:absolute;
+	margin:auto;
+	width: 100%;
+}
+.ctr .form #submitBtn{
+	height:40px;
+	width:150px;
+}
+.ctr .rslts{
+	width:100%;
+	height:100%;
+}
+.ctr .rslt{
+	width:50%;
+	float:left;
+}
+.ctr .rslt .arb{
+	width:50%;
+	float:right;
+}
+.ctr .rsltbx{
+	margin:auto;
+	height:50%;
+	width:50%;
+}
+ul{
+	list-style: none;
+}
