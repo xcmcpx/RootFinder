@@ -145,7 +145,7 @@ var G9 = {
 	"ء" : "ء".charCodeAt(0)
 }
 var submit = document.getElementById("submitBtn");
-var WORD = document.getElementById("srchBox").value;
+var WORD = document.querySelector(".srchBox");
 var results = document.getElementById("results");
 var countOn = 0;
 var countOff = 0;
