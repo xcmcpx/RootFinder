@@ -1,7 +1,4 @@
 const button = document.getElementById("submitBtn");
-button.addEventListener("click", function(e){
-	mainMethod();
-});
 
 
 
@@ -589,6 +586,8 @@ function rootDistance(R){
 	}
 };
 
-
+button.addEventListener("click", function(e){
+	mainMethod();
+});
 
 
