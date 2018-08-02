@@ -2,7 +2,8 @@ const button = document.getElementById("submitBtn");
 
 
 
-var ALSHADDA = {
+function mainMethod(){
+	var ALSHADDA = {
 	"اللّ" : "ّ".charCodeAt(0)};
 var DICT = {
 	"ذ" : "ذ".charCodeAt(0),
@@ -160,9 +161,6 @@ var N = WORD.length;
 var R = new Array(WORD.length).fill(-1);
 var Changes = false;
 var ROOT = "";
-
-
-function mainMethod(){
 
 defArticle();
 N=WORD.length;
