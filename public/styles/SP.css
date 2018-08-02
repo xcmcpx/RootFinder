@@ -20,6 +20,7 @@ button{
 	border:solid;
 	border-color: #315b47;
 	width:100%;
+	background-color: #8de2c9;
 }
 .ctr .titlArb{
 	width:85%;
@@ -72,6 +73,7 @@ button{
 	width:50%;
 	border: 1px solid;
 	color: #2d7361;
+	background-color: #8de2c9;
 }
 ul{
 	list-style: none;
