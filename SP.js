@@ -55,8 +55,8 @@ app.post("/storeData", function(req,res){
         if(err){
             console.log(err);
         }else{
-            //res.send("Thank you for storing your data. I appreciate the input.");
-            res.redirect("/storeData");
+            res.send("Thank you for storing your data. I appreciate the input.");
+            //res.redirect("/storeData");
         }
     });
 });
