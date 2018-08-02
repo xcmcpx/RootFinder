@@ -2,3 +2,9 @@
 وبالوالدين
 عسير
 واقعدوا
+
+
+
+
+
+action = "/storeData" method = "POST"
