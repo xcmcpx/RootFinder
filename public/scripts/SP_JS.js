@@ -160,19 +160,18 @@ var ROOT = "";
 
 
 function mainMethod(){
+WORD = document.getElementById("srchBox").value;
 defArticle();
 N=WORD.length;
 console.log(countOn);
 console.log(WORD);
 console.log(R);
-alert("Check break");
 if(WORD.includes("ال")){
 	R[WORD.indexOf("ال")+1] = 1;
 }
 console.log(countOn);
 console.log(WORD);
 console.log(R);
-alert("Check break");
 var n = N;
 var S1 = WORD.substring(0,(Math.round(n/3)));
 var S2 = WORD.substring(Math.round(n/3),Math.round(n/3) +(n-(2*S1.length)));
@@ -182,7 +181,6 @@ W = WORD.split("");
 mutateFunc(S1, S2, S3, W);
 console.log(WORD);
 console.log(R);
-alert("Check break");
 var vals = Object.values(G1);
 
 console.log(vals);
@@ -196,7 +194,6 @@ for(var i=0; i<vals.length; i++){
 }
 console.log(WORD);
 console.log(R);
-alert("Check break");
 vals = Object.values(G8A);
 for(var j = 0; j<S1.length; j++){
 	if(S1.charCodeAt(j) == vals[i]){
@@ -206,7 +203,6 @@ for(var j = 0; j<S1.length; j++){
 }
 console.log(WORD);
 console.log(R);
-alert("Check break");
 vals = Object.values(G8B);
 if(S3.endsWith(vals[i])){
 	R[WORD.indexOf(vals[i])] = 0;
@@ -214,7 +210,6 @@ if(S3.endsWith(vals[i])){
 }
 console.log(WORD);
 console.log(R);
-alert("Check break");
 
 console.log(countOn);
 var st_in = 1;
@@ -227,7 +222,6 @@ if (countOn >= 3){
 	}
 	console.log(R);
 	console.log(ROOT);
-	alert("Check!");
 	document.getElementById("rsltBox").innerHTML = ROOT;
 	return;
 }
@@ -235,13 +229,11 @@ if(countOn == 2 && flag){
 rootDistance(R);
 console.log(WORD);
 console.log(R);
-alert("Check break");
 }
 
 console.log(n);
 console.log(WORD);
 console.log(R);
-alert("Check break");
 if(R[st_in] == 0 || R[ls_in] == 0){
 	if(R[st_in] == 0){
 		r1_flag = true;
@@ -271,7 +263,6 @@ console.log(Wseg);
 console.log(vals + " " +var3 + " " +var4 + " " +var5 + " " +var6 + " " +var7);
 console.log(WORD);
 console.log(R);
-alert("Check break");
 
 if(S1.charCodeAt(0) == vals[0]){
 	R[0] = 1;
@@ -279,7 +270,6 @@ if(S1.charCodeAt(0) == vals[0]){
 }
 console.log(WORD);
 console.log(R);
-alert("Check break");
 for(var i=0; i<var3.length; i++){
 	for(var j = 0; j<S1.length; j++){
 		if(S1.charCodeAt(j) == var3[i]){
@@ -291,7 +281,6 @@ for(var i=0; i<var3.length; i++){
 console.log(WORD);
 console.log(R);
 console.log(S2);
-alert("Check break");
 for(var i=0; i<var4.length; i++){
 	if(S2.charCodeAt(0) == var4[i]){
 		R[S1.length] = 1;
@@ -300,7 +289,6 @@ for(var i=0; i<var4.length; i++){
 }
 console.log(WORD);
 console.log(R);
-alert("Check break");
 for(var i=0; i<var5.length; i++){
 	for(var j = 0; j<S2.length; j++){
 		if(S2.charCodeAt(j) == var5[i]){
@@ -311,7 +299,6 @@ for(var i=0; i<var5.length; i++){
 }
 console.log(WORD);
 console.log(R);
-alert("Check break");
 for(var i=0; i<var6.length; i++){
 	if(S2.charCodeAt(S2.length-1) == var6[i]){
 		R[S1.length+S2.length+1] = 1;
@@ -320,7 +307,6 @@ for(var i=0; i<var6.length; i++){
 }
 console.log(WORD);
 console.log(R);
-alert("Check break");
 for(var i=0; i<var7.length; i++){
 	for (var j = 0; j<S3.length; j++){
 		if(WORD.charCodeAt(n-1) == var7[i]){
@@ -339,7 +325,6 @@ for(var i=0; i<var9.length; i++){
 }
 console.log(WORD);
 console.log(R);
-alert("Check break");
 while(Changes == false){
 	console.log(Changes);
 	extraRules(S1, S2, S3, n);
