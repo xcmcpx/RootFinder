@@ -33,7 +33,7 @@ var rootBank = mongoose.model("root_bank", rootBankSchema);
 app.get("/", function(req, res){
     res.render("SP");
 });
-//get method without landing page. Needs more work
+//get method that reports to the server whenever a rootwoord has been added to the library
 app.get("/storeData", function(req, res){
     rootBank.find({}, function(err, rootbanks){
         if(err){
