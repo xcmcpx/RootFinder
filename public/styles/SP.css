@@ -1,8 +1,14 @@
 body{
-	background-color: #FEFCD7;
+	background-color: #Fdf5d0;
+	margin-left:100px;
+	margin-right:100px;
 }
-h1, h2{
-	color: #6A8347;
+h1, h2, h3, h4, p{
+	color: #2d7361;
+}
+button{
+	background-color: #8de2c9;
+	color: #2d7361;
 }
 .ctr{
 	height:100%;
@@ -12,7 +18,7 @@ h1, h2{
 }
 .ctr .title{
 	border:solid;
-	border-color: #6A8347;
+	border-color: #315b47;
 	width:100%;
 }
 .ctr .titlArb{
@@ -28,14 +34,14 @@ h1, h2{
 	position:relative;
 	text-align: center;
 }
-.ctr .form #engLbl{
+#engLbl{
 	float:left;
 }
 .ctr .form #srchBox{
 	height:40px;
 	width:300px;
 }
-.ctr .form #arbLbl{
+ #arbLbl{
 	float:right;
 }
 .ctr .form .submitBtn{
@@ -60,10 +66,17 @@ h1, h2{
 	float:right;
 }
 .ctr .rsltbx{
-	margin:auto;
+	padding: 50px;
+	margin-top: 100px;
 	height:50%;
 	width:50%;
+	border: 1px solid;
+	color: #2d7361;
 }
 ul{
 	list-style: none;
+}
+#ftr{
+	position: absolute;
+	bottom: 0;
 }
