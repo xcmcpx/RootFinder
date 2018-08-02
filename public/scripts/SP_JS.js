@@ -145,7 +145,7 @@ var G9 = {
 	"ء" : "ء".charCodeAt(0)
 }
 var submit = document.getElementById("submitBtn");
-var word = document.querySelector(".srchBox");
+var WORD = document.getElementById("srchBox").value;
 var results = document.getElementById("results");
 var countOn = 0;
 var countOff = 0;
@@ -153,14 +153,13 @@ var flag = true;
 var r1_flag = false;
 var rn_flag = false;
 var Changes = false;
+var W = WORD.split("");
+var N = WORD.length;
+var R = new Array(WORD.length).fill(-1);
 var ROOT = "";
 
 
 function mainMethod(){
-var WORD = word.value;
-var W = WORD.split("");
-var N = WORD.length;
-var R = new Array(WORD.length).fill(-1);
 defArticle();
 N=WORD.length;
 console.log(countOn);
