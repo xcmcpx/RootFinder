@@ -24,14 +24,8 @@ var rootBankSchema = new mongoose.Schema({
 var rootBank = mongoose.model("root_bank", rootBankSchema);
 
 
-
-
 //attempted array to store search root woord queries
-var root_bank = [
-    
-    {searchWord: "وبالوالدين",
-    rootWord: "ولد"}
-    ];
+
 
 
 
@@ -39,13 +33,32 @@ var root_bank = [
 app.get("/", function(req, res){
     res.render("SP");
 });
-
+//get method without landing page. Needs more work
+app.get("/storeData", function(req, res){
+    rootBank.find({}, function(err, rootbanks){
+        if(err){
+            console.log(rootbanks);
+            console.log(err);
+        }else{
+            console.log(rootbanks);
+            res.send("The data has been stored. Thank you for your input.");
+        }
+    })
+});
 // POST method that can be edited/applied to application when needed. Not 100% functional yet.
-app.post("/", function(req,res){
+app.post("/storeData", function(req,res){
     var word = req.body.wd;
     var root = req.body.rtWd;
     var newRoot = {searchWord: word, rootWord: root};
-    root_bank.push(newRoot);
+    //create a new rootword and save to database
+    rootBank.create(newRoot, function(err, newlyCreated){
+        if(err){
+            console.log(err);
+        }else{
+            //res.send("Thank you for storing your data. I appreciate the input.");
+            res.redirect("/storeData");
+        }
+    });
 });
 
 

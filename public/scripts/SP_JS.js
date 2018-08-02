@@ -1,6 +1,5 @@
 //grab the button from out page and initialize it to a variable that we can then use to create an event
 const button = document.getElementById("submitBtn");
-
 //dictionary for the arabic definite article "the" or ال
 var ALSHADDA = {
 	"اللّ" : "ّ".charCodeAt(0)};
@@ -330,7 +329,7 @@ while(Changes == false){
 				}
 			}
 	document.getElementById("rsltBox").innerHTML = ROOT;
-	return;
+	return ;
 		}
 	
 	}
@@ -556,7 +555,6 @@ function rootDistance(R){
 };
 //javascript DOM manipulation event that listens for the click of the button and performs our root extraction
 button.addEventListener("click", function(e){
-	mainMethod();
+	return mainMethod();
 });
-
 
