@@ -235,6 +235,7 @@ if (countOn >= 3){
 	console.log(R);
 	console.log(ROOT);
 	alert("Check!");
+	document.getElementById("rsltBox").innerHTML = ROOT;
 	return;
 }
 if(countOn == 2 && flag){
@@ -360,6 +361,7 @@ while(Changes == false){
 			}
 	console.log(R);
 	console.log(ROOT);
+	document.getElementById("rsltBox").innerHTML = ROOT;
 	return;
 		}
 	
@@ -368,7 +370,6 @@ while(Changes == false){
 console.log(R);
 console.log("after");
 console.log(Changes);
-console.log(ROOT);
 }
 
 
